@@ -1,3 +1,4 @@
+import { HighlightsCardGameButton } from "./HighlightsCardGameButton";
 import { HighlightsCardGameDescription } from "./HighlightsCardGameDescription";
 import { HighlightsCardGameImages } from "./HighlightsCardGameImages";
 import { HighlightsCardGameRoot } from "./HighlightsCardGameRoot";
@@ -8,6 +9,7 @@ export const HighlightsCardGame = {
   Root: HighlightsCardGameRoot,
   Title: HighlightsCardGameTitle,
   Description: HighlightsCardGameDescription,
+  Button: HighlightsCardGameButton,
   Images: HighlightsCardGameImages,
   Values: HighlightsCardGameValues,
 }
