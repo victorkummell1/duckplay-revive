@@ -6,7 +6,7 @@ import { Button } from "../../ui/button";
 export function HeaderSocial() {
   return (
     <section className="flex items-center gap-8">
-      <Select>
+      <Select defaultValue={"pt-BR"}>
         <SelectTrigger className="w-[180px]">
           <SelectValue placeholder="Selecione o Idioma"/>
         </SelectTrigger>

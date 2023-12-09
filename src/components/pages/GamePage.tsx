@@ -1,6 +1,7 @@
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { DiLinux, DiWindows, DiApple } from "react-icons/di";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 
 export function GamePage() {
   return (
@@ -9,9 +10,30 @@ export function GamePage() {
         <section className="w-full flex items-center justify-between">
           <h1 className="font-light text-5xl">Equilinox</h1>
           <div className="flex items-center gap-3">
-            <DiWindows className="w-6 h-6"/>
-            <DiLinux className="w-6 h-6"/>
-            <DiApple className="w-6 h-6"/>
+            <Tooltip>
+              <TooltipTrigger>
+                <DiWindows className="w-6 h-6"/>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Compativel com Windows</p>
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger>
+                <DiLinux className="w-6 h-6"/>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Compativel com Linux</p>
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+            <TooltipTrigger>
+              <DiApple className="w-6 h-6"/>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Compativel com MacOs</p>
+            </TooltipContent>
+          </Tooltip>
           </div>
         </section>
         <section className="w-full flex flex-col items-start justify-start gap-4">
